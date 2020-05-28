@@ -5,6 +5,9 @@
     <title>Register With Us</title>
 </head>
 <body>
+<h1>Veridian Dynamics&trade;</h1>
+<hr>
+<br>
 <form method="post" action="https://request-inspector.glitch.me/">
 
     <label for="email">Input Your Email Address: </label>
@@ -17,14 +20,14 @@
 
     <label for="bio">Biography:</label>
     <br>
-    <textarea name="bio" id="bio" cols="100" rows="10"> </textarea>
+    <textarea name="bio" id="bio" cols="100" rows="10" placeholder="short bio here"> </textarea>
 
     <br>
     <h4>How did you hear about us?</h4>
-    <input type="checkbox" name="capture" value="billboard" id="billboard"> <label for="billboard">Billboard</label><br>
-    <input type="checkbox" name="capture" value="radio" id="radio"> <label for="radio">Radio Advertisement</label><br>
-    <input type="checkbox" name="capture" value="web" id="web"> <label for="web">Internet Advertisement</label><br>
-    <input type="checkbox" name="capture" value="other" id="other"> <label for="other">Other</label><br>
+    <input type="radio" name="advertisement 1" value="billboard" id="billboard"> <label for="billboard">Billboard</label><br>
+    <input type="radio" name="advertisement 2" value="radio" id="radio"> <label for="radio">Radio Advertisement</label><br>
+    <input type="radio" name="advertisement 3" value="web" id="web"> <label for="web">Internet Advertisement</label><br>
+    <input type="radio" name="advertisement 4" value="other" id="other"> <label for="other">Other</label><br>
 
     <br>
 
@@ -36,6 +39,8 @@
         <option value="explorer">Internet Explorer</option>
     </select>
 
+    <br>
+    <br>
     <br>
 
     <button type="submit">Submit your form</button>
