@@ -1,8 +1,58 @@
 /* Style for heading elements */
 
+
+body {
+    background-color: yellowgreen;
+    background-image: url("../img/veridian tech photo.jpg");
+    background-repeat: no-repeat;
+    background-size: 750px;
+    background-position:center, top;
+    font-family: 'Oswald', sans-serif;
+}
+
 h1 {
-    text-decoration:underline;
-    color:purple;
+    text-decoration: underline;
+    color: purple;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, th {
+    text-decoration: underline;
+    color: forestgreen;
+}
+
+#values-list{
+                list-style:square;
+}
+
+#process-list{
+                list-style:upper-roman;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+#price-table, table {
+    border: 1px solid black;
+}
+
+a:link{ color:black;
+}
+
+a:visited{ color:purple;
+
+}
+
+a:hover{color:red;
+
+}
+
+a:active{color:yellow;
+
+}
+
 
 /*
     Multi
