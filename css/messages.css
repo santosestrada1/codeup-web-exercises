@@ -6,53 +6,38 @@ body, html {
     font-family: Arial, Ubuntu, sans-serif;
 }
 
-.message-info{
-    background-color: #CDDEFF;
-    border-radius: 2px;
-    color: #281C88;
-    margin:.5em;
-    height:30px;
-    padding-top:10px;
-    padding-left:10px;
+.message{
+padding-left:2em;
     border:1px solid;
     border-color:lightgray;
+    border-radius: 2px;
+    padding-top:10px;
+    padding-left:10px;
+    margin:.5em;
+    height:30px;
+
+}
+
+.message-info{
+    background-color: #CDDEFF;
+    color: #281C88;
 
 }
 
 .message-success{
     background-color: #CFF3DA;
-    border-radius: 2px;
     color: #026229;
-    margin:.5em;
-    height:30px;
-    padding-top:10px;
-    padding-left:10px;
-    border:1px solid;
-    border-color:lightgray;
+
 
 }
 
 .message-warning{
     background-color: #FCFBC9;
-    border-radius:2px;
     color: #A79844;
-    margin:.5em;
-    height:30px;
-    padding-top:10px;
-    padding-left:10px;
-    border:1px solid;
-    border-color:lightgray;
 
 }
 
 .message-error{
     background-color:#FAD2D7 ;
-    border-radius:2px;
     color:#923046;
-    margin:.5em;
-    height:30px;
-    padding-top:10px;
-    padding-left:10px;
-    border:1px solid;
-    border-color:lightgray;
 }
