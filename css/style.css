@@ -2,11 +2,11 @@
 
 
 body {
-    background-color: yellowgreen;
-    background-image: url("../img/veridian tech photo.jpg");
+    background-color: #FFFFE3;
+    background-image: url("../img/viridian-logo.svg");
     background-repeat: no-repeat;
     background-size: 750px;
-    background-position:center, top;
+    background-position:top;
     font-family: 'Oswald', sans-serif;
 }
 
