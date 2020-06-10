@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+nav {
+    background: #C1C1C1;
+    display:flex;
+    flex-direction: row;
+
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana;
+    display:inline-block;
+
+
+
+
+}
+nav a:hover {
+    background: blue;
+}
+
+.logo a{
+
+}
+
+.icons a{
+
+margin-left: auto;
+}
+
+
