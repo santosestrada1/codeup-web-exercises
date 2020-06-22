@@ -91,16 +91,54 @@
 
         // Write a JavaScript function that returns the boolean true if a number passed through it is even.
 
-            function evenNumber(num){
-if (num%2===1){return false}
+//             function evenNumber(num){
+// if (num%2===1){return false}
+//
+//             else {return true;}
+//         }
+//
+//         console.log(evenNumber(3));
+//         console.log(evenNumber(32));
+//         console.log(evenNumber(13));
+//         console.log(evenNumber(24));
 
-            else {return true;}
+        // Write a JS function called magic8Ball that takes in one number as a parameter. The return value should be one of the following strings that correlates to the number passed in.
+
+
+        // As I see it, yes.
+        //     Ask again later.
+        //     Better not tell you now.
+        //     Cannot predict now.
+        //     Concentrate and ask again.
+        //     Don’t count on it.
+        //     Outlook not so good.
+        //     Outlook is good.
+
+            let luckyNumber = Math.floor((Math.random() * 8) + 1)
+
+        function magic8Ball(luckyNumber) {
+            switch(luckyNumber) {
+                case 1:
+                    return ("As I see it, yes");
+                case 2:
+                    return ("Ask again later");
+                case 3:
+                    return ("Better not tell you now");
+                case 4:
+                    return ("Cannot predict now");
+                case 5:
+                    return ("Concentrate and ask again");
+                case 6:
+                    return ("Don't count on it");
+                case 7:
+                    return ("Outlook not so good");
+                case 8:
+                    return ("Outlook is good");
+            }
         }
 
-        console.log(evenNumber(3));
-        console.log(evenNumber(32));
-        console.log(evenNumber(13));
-        console.log(evenNumber(24));
+        alert(magic8Ball(luckyNumber));
+
     </script>
 </body>
 </html>
