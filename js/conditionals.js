@@ -136,14 +136,14 @@ console.log(calculateTotal(5, 100)); // 0
  */
 // Generate a random number between 0 and 6
 var luckyNumber = Math.floor(Math.random() * 6);
-// let totalBill = parseFloat(prompt("Please enter your total bill: "));
-// alert("Your lucky number is " + luckyNumber);
-// alert("Your price before discount is: " + totalBill);
-//
-// let totalAfterDiscount = calculateTotal(luckyNumber, totalBill);
-// alert("Your price after discount is: " + totalAfterDiscount);
-//
-// alert("Your price after discount is: " + calculateTotal(luckyNumber, totalBill));
+let totalBill = parseFloat(prompt("Please enter your total bill: "));
+alert("Your lucky number is " + luckyNumber);
+alert("Your price before discount is: " + totalBill);
+
+let totalAfterDiscount = calculateTotal(luckyNumber, totalBill);
+alert("Your price after discount is: " + totalAfterDiscount);
+
+alert("Your price after discount is: " + calculateTotal(luckyNumber, totalBill));
 
 /**
  * TODO:
