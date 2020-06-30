@@ -80,6 +80,8 @@
         //
         // console.log(returnargument("Santos Estrada"));
 
+
+// 22 June 2020
 //         Write a JS function that returns a string representing the type of the argument passed through it.
 //
 // function representType(input){
@@ -89,6 +91,7 @@
 //
 // console.log(representType(12345));
 
+        // 23 June 2020
         // Write a JavaScript function that returns the boolean true if a number passed through it is even.
 
 //             function evenNumber(num){
@@ -102,8 +105,9 @@
 //         console.log(evenNumber(13));
 //         console.log(evenNumber(24));
 
-        // Write a JS function called magic8Ball that takes in one number as a parameter. The return value should be one of the following strings that correlates to the number passed in.
 
+        // 24 June
+        // Write a JS function called magic8Ball that takes in one number as a parameter. The return value should be one of the following strings that correlates to the number passed in.
 
         // As I see it, yes.
         //     Ask again later.
@@ -139,20 +143,55 @@
         //
         // alert(magic8Ball(luckyNumber));
 
+// 29 June
+        // let lights = "on";
+        // let lightSwitch = function() {
+        //     if(lights === "on"){
+        //         lights = "off";
+        //     } else {
+        //         lights = "on";
+        //     }
+        // }
+        //
+        // console.log("lights are " + lights);
+        // lightSwitch();
+        // console.log("lights are now " + lights);
 
-        let lights = "on";
-        let lightSwitch = function() {
-            if(lights === "on"){
-                lights = "off";
-            } else {
-                lights = "on";
+// 30 June 2020
+        // Write a JS function that will loop through the numbers 1-10 and output whether each is even or odd. Ie:
+        // 1 is odd
+        // 2 is even
+        // 3 ...
+
+        // for (var x=1; x<=10; x++) {
+        //     if (x === 0) {
+        //         console.log(x +  " is even");
+        //     }
+        //     if else (x % 2 === 0) {
+        //         console.log(x + " is even");
+        //     }
+        //     else {
+        //         console.log(x + " is odd");
+        //     }
+        // }
+
+        // or
+        //
+        var countTo10 = function() {
+            var num = 1;
+            while (num <= 10) {
+                if (num === 0) {
+                    console.log(num + " is even");
+                }
+                if (num % 2 === 0) {
+                    console.log(num + " is even");
+                } else {
+                    console.log(num + " is odd");
+                }
+                num++;
             }
         }
-
-        console.log("lights are " + lights);
-        lightSwitch();
-        console.log("lights are now " + lights);
-
+        countTo10();
 
     </script>
 </body>
