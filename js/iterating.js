@@ -16,7 +16,7 @@
      * array.
      */
 
-    console.log(names.length)
+    console.log('The number of elements in the names array is ' + names.length + '.');
 
     /**
      * TODO:
@@ -37,7 +37,7 @@
      */
 
     for (let i=0; i< names.length; i++){
-        console.log(names[i]);
+        console.log('The name at index ' + i + ' is ' + names[i] + '.');
     }
 
     /**
@@ -46,7 +46,7 @@
      */
 
     names.forEach(function(name, index){
-        console.log("The fruit at index " + index + " is " + name + '.');
+        console.log("The name at index " + index + " is " + name + '.');
     });
 
     /**
@@ -62,7 +62,8 @@
      *  > second([1, 2, 3, 4, 5]) // returns 2
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
-    var numbers = [1,2,3,4,5]
+    var numbers = [1,2,3,4,5];
+
 function returnFirstNumber() {
         console.log(numbers[0]);
 
@@ -78,5 +79,38 @@ function returnFirstNumber() {
         console.log(numbers[numbers.length - 1]);
     }
     returnLastItem();
+
+
+    // or
+
+
+    let elements = [1, 2, 3, 4, 5];
+
+        let first = function (arr) {
+            if (arr) {
+                return arr[0];
+            } else {
+                return undefined;
+            }
+        }
+
+            let second = function (arr) {
+                if (arr) {
+                    return arr[1];
+                } else {
+                    return undefined;
+                }
+            }
+
+                let Last = function (arr) {
+                    if (arr) {
+                        return arr[arr.length - 1];
+                    } else {
+                        return undefined;
+                    }
+                }
+                    console.log(first(elements));
+                    console.log(second(elements));
+                    console.log(Last(elements));
 
 })();
