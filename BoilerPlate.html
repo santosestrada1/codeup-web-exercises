@@ -31,14 +31,17 @@
    //  });
 
     var fruits = ["Banana", "Orange", "Apple", "Mango"];
-    fruits.forEach(function(fruit, index){
-        console.log("The fruit at index " + index + " is " + fruit + '.');
-    });
+    // fruits.forEach(function(fruit, index){
+    //     console.log("The fruit at index " + index + " is " + fruit + '.');
+    // });
 
-    var fruits = ["Banana", "Orange", "Apple", "Mango"];
-    fruits.forEach(myTwoParamFunction(fruit, index){
-        console.log("The fruit at index " + index + " is " + fruit + '.');
-    })
+    var shapes = ['square', 'rectangle', 'circle', 'triangle'];
+    shapes.forEach(myTwoParamFunction);
+    fruits.forEach(myTwoParamFunction);
+    function myTwoParamFunction(thing, index) {
+        alert('the thing at index ' + index + ' is ' + thing + '.');
+    }
+
 
 
 </script>
