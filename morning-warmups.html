@@ -177,21 +177,53 @@
 
         // or
         //
-        var countTo10 = function() {
-            var num = 1;
-            while (num <= 10) {
-                if (num === 0) {
-                    console.log(num + " is even");
-                }
-                if (num % 2 === 0) {
-                    console.log(num + " is even");
-                } else {
-                    console.log(num + " is odd");
-                }
-                num++;
+        // var countTo10 = function() {
+        //     var num = 1;
+        //     while (num <= 10) {
+        //         if (num === 0) {
+        //             console.log(num + " is even");
+        //         }
+        //         if (num % 2 === 0) {
+        //             console.log(num + " is even");
+        //         } else {
+        //             console.log(num + " is odd");
+        //         }
+        //         num++;
+        //     }
+        // }
+        // countTo10();
+
+        // 01 July 2020
+
+        // Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+
+        // doubleChar("String") ==> "SSttrriinngg"
+        //
+        // doubleChar("Hello World") ==> "HHeelllloo  WWoorrlldd"
+        //
+        // doubleChar("1234!_ ") ==> "11223344!!__  "
+
+        function doubleChar(str) {
+            // Your code here
+            let returnString =  "";
+
+            for (var i= 0; i < str.length; i++){
+                //first i = 0, returnString += str[0] + str [0] === returnString += 'a' + 'a'
+                //second i = 1, returnString += str[1] + str [1] === returnString += 'b' + 'b'
+                //Third i = 2, returnString += str[2] + str [2] === returnString += 'c' + 'c'
+                returnString += str[i] + str[i];
+
+                str[str.length-1] //retrieve the last index of the string
+
+                console.log(returnString);
             }
-        }
-        countTo10();
+            return returnString;
+            }
+
+
+
+
+
 
     </script>
 </body>
