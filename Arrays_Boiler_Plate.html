@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boiler</title>
+</head>
+<body>
+
+<script>
+    // var myArr = ["Chevy", " Ford ","Buick"];
+    // alert(cars);
+    // console.log(cars);
+
+    // var myArr = ["Chevy", " Ford", 333, [true, false, true]];
+    // alert("The size of the Array is: " + myArr.length + " elements.");
+    // console.log("The size of the Array is: " + myArr.length + " elements.");
+
+
+    // var shapes = ['square', 'rectangle', 'circle', 'triangle'];
+    // var notice = 'The shape at index 1 is: ' + shapes[1] + "\n";
+    // notice = notice + 'The shape at index 4 is: ' + shapes[4];
+    // alert(notice);
+
+    // var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    // for (var i = 0; i < fruits.length; i++) {
+    //     console.log('The shape at index ' + i + ' is: ' + fruits[i]);
+    // }
+
+   // Example: shapes.forEach(function(shape, index) {
+   //      console.log('the shape at index ' + index + ' is ' + shape + '.');
+   //  });
+
+    // var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    // // fruits.forEach(function(fruit, index){
+    // //     console.log("The fruit at index " + index + " is " + fruit + '.');
+    // // });
+    //
+    // var shapes = ['square', 'rectangle', 'circle', 'triangle'];
+    // shapes.forEach(myTwoParamFunction);
+    // fruits.forEach(myTwoParamFunction);
+    // function myTwoParamFunction(thing, index) {
+    //     alert('the thing at index ' + index + ' is ' + thing + '.');
+    // }
+
+
+    // 02 July 2020 //
+
+    // Create an Array with the five weekdays.
+    //     Write the size to the console.
+    //     Add Sunday to the front of the array.
+    //     Add Saturday to the end of the array.
+    //     Write array values and the new size to the console.
+
+    // var daysOfTheWeek = ['Monday' , 'Tuesday' , 'Wednesday' , 'Thursday' , 'Friday'];
+    // console.log(daysOfTheWeek.length)
+    // daysOfTheWeek.unshift( 'Sunday' );
+    // daysOfTheWeek.push( 'Saturday' );
+    // daysOfTheWeek.forEach(function(day){
+    //     console.log(day)
+    // })
+    // console.log(daysOfTheWeek.length);
+
+
+    // Create an Array with the five elements.
+    //     Write the array to the console.
+    //     Pop the last element and write it to the console.
+    //     Remove the first element from the array and write it to the console.
+    //     Write the array to the console.
+
+    // var myArray = [" Dog " , " Cat " , " Mouse " , " Horse " , " Cow "];
+    // alert(myArray)
+    // var item1 = myArray.pop()
+    // console.log(item1)
+    // var item2 = myArray.shift();
+    // console.log(item2);
+    // console.log(myArray);
+
+    // Write the index of indigo to an alert.
+
+    // var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'red'];
+    // let index = colors.indexOf('indigo');
+    // alert(index);
+
+
+// Mini Lab
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    // Slice out 'Orange' and 'Apple' into another array.
+    //     Write the second array values to the console.
+
+    let slice = fruits.slice(1,3);
+    alert(slice);
+
+// Reverse Array //
+
+var c2 = fruits.reverse();
+alert(c2);
+
+// Sort Array //
+
+    alert(c2.sort());
+
+    // /**
+    //  * MINI LAB
+    //  Given: var fruitStrings = "Banana,Orange,Apple,Mango";
+    //  Convert the String to an array.
+    //  Use a For-Each loop to write each element of the array to the console log.
+    //  */
+
+    var fruitStrings = "Banana,Orange,Apple,Mango";
+    var arr = fruitStrings.split(',');
+    alert('Array from String' + arr);
+
+
+    // /**
+    //  * MINI LAB
+    //  Given: var fruitsArray = ["Banana", "Orange", "Apple", "Mango"];
+    //  Convert the Array to a String.
+    //  Write the string to the console log.
+    //  */
+
+    var fruitsArray = ["Banana", "Orange", "Apple", "Mango"];
+    var stringFromArr = fruitsArray.join(',');
+    alert('String from array' + stringFromArr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
