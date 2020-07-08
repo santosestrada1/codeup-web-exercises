@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM/DOM BoilerPlate</title>
+</head>
+<body>
+
+
+
+<p class = "a">P1 A</p>
+<p class = "b">P2 B</p>
+<p class = "a">P3 A</p>
+<p class = "b">P4 B</p>
+
+<script>
+    "use strict";
+    (function() {
+
+    let evenElements = document.getElementsByClassName("b");
+    for (var i = 0; i < evenElements.length; i++)
+        console.log(evenElements[i].outerHTML)
+    })();
+
+    (function() {
+        let Elements = document.getElementsByTagName("p");
+        for (var i = 0; i < Elements.length; i++)
+            console.log(Elements[i].innerHTML)
+    })();
+    </script>
+
+    <form name="login">
+        <div>
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" value="Santos Estrada">
+        </div>
+        <div>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password">
+        </div>
+        <div>
+        </form>
+<button onclick="saveUserName()">Submit</button>
+        <script>
+        "use strict";
+    (function() {
+        // get the "username" input
+        let usernameInput = document.forms.login.username;
+
+        // log the value of the "username" input
+        console.log(usernameInput.value);
+    })();
+
+    function saveUserName(){
+        var userName = document.forms.login.username.value;
+        console.log(userName);
+    }
+
+    </script>
+<!--        // Create a <p> tag with the id='demo'-->
+<!--        // Change the innerHTML to '<b>Hello Hyperion!<\b>'-->
+<!--        // Create a <p> tag with the id='demoText'-->
+<!--        // Change the innerText to '<b>Hello Hyperion!<\b>'-->
+
+        <h1 id="main-heading">Hello World!</h1>
+        <div id="main-section">
+            <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        </div>
+<script>
+        (function() {
+            // Get the main heading h1 by id
+            var mainHeading = document.getElementById('main-heading');
+
+            console.log(mainHeading.innerHTML); // Prints Hello World!
+
+            // Assign a new value to the inner HTML of the main heading
+            mainHeading.innerHTML = "Hello Codeup!";
+
+            console.log(mainHeading.innerHTML); // Prints Hello Codeup!
+
+            // Get the main section div by id
+            var mainSection = document.getElementById('main-section');
+
+            console.log(mainSection.innerHTML);
+            // Prints
+            // <p>Paragraph 1</p>
+            // <p>Paragraph 2</p>
+        })();
+</script>
+
+</body>
+</html>
