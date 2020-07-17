@@ -21,10 +21,17 @@ console.log(typeOfValue(a[2]));
 
 // TODO: Write a function 'isPositive' that takes in a number and returns true or false based on whether the input is positive.
 
+const isPositive = function(num){
+    if (num > 0){
+        return true;
+    }else{
+        return false;
+    }
+}
 
-// console.log(isPositive(2)) // true
-// console.log(isPositive(-4)) // false
-// console.log(isPositive(0)) // false
+console.log(isPositive(2)) // true
+console.log(isPositive(-4)) // false
+console.log(isPositive(0)) // false
 
 // TODO: Write a function 'removeElement' that takes in an array and a value, and returns an Array with the first instance of the indicated value removed.
 const removeElement = function (arr, val) {
@@ -75,9 +82,9 @@ console.log(sumOfNumbers([-1, 15])); // 14
 // evensIndex([5,5,7,13]) // returns []
 
 // TODO: Write a function 'stringToArray' that takes in a comma separated list and returns it as an array.
+
 // stringToArray("red,orange,yellow,green,blue") // returns ['red','orange',
 // 'yellow','green','blue']
-//
 // stringToArray("1,2,3") // returns ['1','2','3']
 // stringToArray("dog") // returns ['dog']
 // TODO: Given the following array of objects, write a function 'findUsers' that returns an Array of usernames.
