@@ -1,65 +1,46 @@
 "use strict";
 
-window.onload = function() {
-    alert( 'The page has finished loading!' );
-}
+$(document).ready(function(){
+    console.log("Ready to Roll?");
 
-$(document).ready(function() {
+    let pinks = ['pink' , 'salmon' , 'hotpink', 'lightpink', 'deeppink', 'green']
+    $('h1').click(function(){
+        let randomColor = pinks[Math.floor(Math.random()*pinks.length)];
+        $(this).css("background-color", randomColor);
+        $(this).html("Hello <strong style='text-decoration:underline'>Hyperion</strong>")
+    });
 
-    alert(" Good to Go!")
 
+// Add jQuery code that will change the background color of an h1 element when clicked.
+$('p').click(function() {
+    $(this).css('background-color' , 'blue')
+});
+// Make all paragraphs have a font size of 18px when they are double clicked.
+
+$('li').dblclick(function() {
+    $(this).css('font-size' , '18px')
 });
 
-///// Id Selectors /////
-
-// TODO: Use jQuery to select an element by the id. Alert the contents of the element.
-
-// var contents = $('#hello').html();
-// alert(contents);
-
-// TODO: Update the jQuery code to select and alert a different id.
-
-// contents = $('#1').html();
-// alert(contents);
-
-// TODO: Use the same id on 2 elements. How does this change the jQuery selection?
-//  Answer: // First run returned the 1st instance of "ID". Second run returned undefined and then the 1st instance of.
+    $('li').dblclick(function() {
+        $(this).toggle(500).delay(1000).toggle(500)
+    })
 
 
-///// Class Selectors /////
 
-// TODO:Update your code so that at least 3 different elements have the same class named codeup. CHECK
+// Set all li text color to red when the mouse is hovering; reset to black when it is not.
+$('li').hover(
+    function() {
+        $(this).addClass("red");
+    },
+    function() {
+        $(this).removeClass("red")
+    }
+)
 
-// TODO:Using jQuery, create a border around all elements with the class codeup that is 1 pixel wide and red.
+    setInterval(function () {
+        let randomColor = pinks[Math.floor(Math.random()*pinks.length)];
+        $('h1').css("background-color", randomColor);
+    }, 2000)
+});
 
-$('.codeup').css({"border" : "1px solid red" });
 
-// TODO:Remove the class from one of the elements. Refresh and test that the border has been removed. CHECK
-
-// TODO:Give another element an id of codeup. Does this element get a border now?
-// YES
-
-///// Element Selectors /////
-
-// Remove your custom jQuery code from previous exercises.
-
-   // TODO:Using jQuery, set the font-size of all li elements to 20px.
-
-$('.list-item').css({'font-size': '20px'});
-
-    // TODO:Craft selectors that highlight all the h1, p, and li elements.
-
-$('h1').addClass('highlighted')
-$('p').addClass('highlighted')
-$('li').addClass('highlighted')
-alert($('h1').html());
-    // TODO:Create a jQuery statement to alert the contents of your h1 element(s).
-
-var contents = $('h1').html();
-alert(contents);
-
-///// Multiple Selectors /////
-
-// TODO:Combine your selectors that highlight all the h1, p, and li elements.
-
-$('h1, p, li').css({'backgroundColor' : 'yellow'})
