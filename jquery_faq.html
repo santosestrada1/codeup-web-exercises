@@ -14,7 +14,7 @@
     $(document).ready(function() {
         $("dd").addClass("invisible");
 
-        $("#btn-1").click(function() {
+        $("#btn-1").click(function () {
             $("dd").toggleClass("invisible");
         });
 
@@ -22,6 +22,22 @@
         $("dt").click(function () {
             $(this).toggleClass("highlighter");
         })
+
+
+        $('#highlighter').click(function () {
+            $('ul').each(function () {
+                $(this).children().last().toggleClass('highlight');
+            });
+        })
+
+        $('h3').click(function() {
+            $(this).next().children().css('font-weight', 'bold');
+        });
+
+        $('li').click(function(){
+            $(this).parent().children().first().css('color', 'blue');
+        });
+
     });
 
 </script>
@@ -42,7 +58,11 @@
     }
 
     .highlighter {
+        background: #ef0;}
+
+    .highlight{
         background: #ef0;
+    }
 
 </style>
 
@@ -84,7 +104,7 @@
     <dd>Total recreation visitors to the national parks in 2019: 327,516,619 .</dd>
 
     <dt>Can I bring my pet to a national park?</dt>
-    <dd class="invisible">Some national parks welcome pets—in developed areas, on many trails and
+    <dd class>Some national parks welcome pets—in developed areas, on many trails and
         campgrounds, and in some lodging facilities.
     </dd>
 
@@ -107,6 +127,28 @@
 
 <button class="styler" id="btn-1">Click to change some things!</button>
 
+<h3 id="national-parks-heading">National Parks</h3>
+<ul id="national-parks">
+    <li>Arches</li>
+    <li>Badlands</li>
+    <li>Carlsbad Caverns</li>
+</ul>
+
+<h3>State Parks of Texas</h3>
+<ul id="state-parks-texas">
+    <li>Abilene</li>
+    <li>Big Bend</li>
+    <li>Choke Canyon</li>
+</ul>
+
+<h3>City Parks of San Antonio</h3>
+<ul id="city-parks-sanAntonio">
+<li>South Side Lions</li>
+<li>Brackenridge Park</li>
+<li>Pickwell Park</li>
+</ul>
+
+<button id="highlighter">Highlight the last li of each ul</button>
 
 
 </body>
