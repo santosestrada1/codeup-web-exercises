@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+
+    <title>Ajax Blog Exercise</title>
+
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+
+<main class="container">
+
+    <h1 class="text-center">Ajax Blog Exercise</h1>
+    <div id="posts">
+
+
+    </div>
+
+    <button id="reloadBtn" class="btn btn-primary">Reload</button>
+
+</main>
+
+<!-- jQuery Version 3.5.1 -->
+<script src="js/jquery-3.5.1.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Custom JS -->
+<script>
+
+    $(document).ready(function() {
+
+        "use strict";
+
+
+        function loadPosts() {
+
+            $.get("./data/blog.json").done(function(data) {
+                buildPostsHTML(data);
+            }).fail(function() {
+                console.log("Failed request");
+            });
+
+        }
+
+        function buildPostsHTML(posts) {
+
+            let outputString = "";
+
+            posts.forEach(function(post) {
+                outputString += "<div class='well'>";
+
+                outputString += "<h6>" + post.date + "</h6>";
+                outputString += "<h3>" + post.title + "</h3>";
+                outputString += "<p>" + post.content + "</p>";
+                outputString += "<ul><li>" + post.categories.join("</li><li>") + "</li></ul>";
+
+                outputString += "</div>";
+            });
+
+            $('#posts').html(outputString);
+        }
+
+        loadPosts();
+
+        $("#reloadBtn").click(loadPosts);
+
+    });
+
+
+</script>
+
+</body>
+</html>

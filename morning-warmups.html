@@ -289,6 +289,22 @@ console.log(inchesToHeight(74));
 console.log(inchesToHeight(63));
 console.log(inchesToHeight("bobcat"));
 
+// Write a function that takes in a string and returns the number of words in the string.
+// Non-string inputs should return null.
+
+    function numOfWords(str){
+        if (typeof str ==="string"){
+            return str.split(" ").length;
+        }else{
+           return null;
+        }
+    }
+console.log(numOfWords("Hello World"));
+console.log(numOfWords("Please excuse my dear aunt sally"));
+console.log(numOfWords(12345));
+console.log(numOfWords(false));
+
+
 </script>
 
 
