@@ -304,6 +304,40 @@ console.log(numOfWords("Please excuse my dear aunt sally"));
 console.log(numOfWords(12345));
 console.log(numOfWords(false));
 
+let fizzbuzz = function(num) {
+    for (let i=1;i<=num;i++){
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("fizzbuzz");
+        } else if (i % 3 === 0) {
+            console.log("fizz");
+        } else if (i % 5 === 0) {
+            console.log("buzz");
+        } else {
+            console.log(i);
+        }
+    }
+}
+fizzbuzz(31);
+
+function fizzbuzz2(num){
+    if (num % 3 === 0 && num % 5 === 0){
+        return "Fizzbuzz";
+    }else if (num % 3 === 0){
+        return "Fizz";
+    }else if (num % 5 === 0){
+        return "Buzz";
+
+    }else if (typeof num !== "number"){
+        return null
+    }else{
+        return num;
+    }
+}
+
+console.log(fizzbuzz2(45));
+console.log(fizzbuzz2(33));
+console.log(fizzbuzz2(22));
+console.log(fizzbuzz2("Dale"));
 
 </script>
 

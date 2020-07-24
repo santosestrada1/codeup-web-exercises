@@ -35,10 +35,10 @@
     (function() {
         "use strict";
 
-        var updateBtn = $("#update");
+        let updateBtn = $("#update");
 
         // TODO: Create an ajax GET request for /data/inventory.json
-        var onSuccess = function(tools){
+        let onSuccess = function(tools){
             var html = "";
 
             $("#insertProducts").empty();
