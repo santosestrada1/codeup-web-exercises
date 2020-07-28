@@ -171,8 +171,8 @@
      *   `showBookInfo` function.
      */
 
-    const createBook = function(title, firstName, lastName){
-        let book ={};
+    const createBook = function(title, firstName, lastName) {
+        let book = {};
         book.title = title;
         book.author = {};
         book.author.firstName = authorFirstName;
@@ -181,9 +181,9 @@
         //     return book;
 
         let books2 = [];
-        books2.push(createBook(title,firstName,lastName))
-        books.forEach(function(book, index,){
-            console.log("Book # " + (index+1))
+        books2.push(createBook(title, firstName, lastName))
+        books.forEach(function (book, index,) {
+            console.log("Book # " + (index + 1))
             console.log("Title:" + book.title);
             console.log("Author: " + book.author.FirstName + " " + book.author.LastName)
             console.log(" --- ")
@@ -192,4 +192,5 @@
         //     return {title,author:{FirstName,LastName}}
         // }
 
-})();
+    }
+}())
