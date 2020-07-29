@@ -34,8 +34,18 @@
 </head>
 <body>
 
+<h1 id="main-header" class="mx-2">Weather App</h1>
+
+<form>
+    <div class="form-group ml-4 mr-5">
+        <label for="text-box">Location: </label>
+        <input type="text" class="form-control w-25" id="text-box" aria-describedby="infoHelp" placeholder="Enter Place">
+        <small id="infoHelp" class="form-text text-muted">We'll never share your information with anyone else.</small>
+    </div>
+    <button id='submit-button' type="submit" class="btn btn-primary mx-4 mb-3">Find</button>
+</form>
+
 <div class="container">
-    <h1 id="main-header">Weather App</h1>
     <div class="d-flex flex-row">
         <div id="card0" class="card mr-2" style="width: 18rem;">
             <div id="weatherDate" class="card-header">Weather Date</div>
@@ -101,6 +111,7 @@
 </div>
 
 <!-- Mapbox JS -->
+<script src="js/mapbox-geocoder-utils.js"></script>
 <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
 
 <!-- The HTML element that serves as the Mapbox container -->
