@@ -1,7 +1,7 @@
 $(function () {
 
 
-    $('#main-header').css('background-color', 'blue');
+    $('#main-header').css('background-color', '#037BFE');
     $('#main-header').css('color', 'white');
 
 
@@ -33,7 +33,7 @@ $(function () {
                 $(cardId + " #humidity").html(data.daily[i].humidity + "% Humidity");
                 $(cardId + " #icon").html(`<img src="${"http://openweathermap.org/img/wn/" + icon + "@2x.png"}">`);
                 $(cardId + " #wind").html("Wind Speed: " + data.daily[i].wind_speed + " mph");
-                $(cardId + " #pressure").html("Pressure: " + data.daily[i].pressure);
+                $(cardId + " #pressure").html("Pressure: " + data.daily[i].pressure + "mBar");
             }
         });
     }
